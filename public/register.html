@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>BloodBank</title>
+
+		<link rel="stylesheet" href="materialize.min.css" />
+
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<link href="icon.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body style="background-color:#222831;">
+		<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+		  <div class="overlay"></div>
+
+		  <div class="carousel-inner">
+		    <div class="item slides active">
+		      <div class="slide-1"></div>
+		      <div class="hero">
+		        <hgroup>
+		            <h1>DONATE BLOOD SAVE LIVES</h1>
+
+		        </hgroup>
+
+		      </div>
+		    </div>
+
+
+		  </div>
+		</div>
+
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		</link>
+
+		<script src="jquery.min.js"></script>
+		<script src="materialize.min.js"></script>
+		<script src="register_script.js"></script>
+
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title"style="text-decoration:underline;color:white;">Register Donor</h1>
+										<br>
+										<h4 style="color:white;">(To be filled by a <u>Doctor / Nurse Only</u>)</h4>
+	               	
+	               	</div>
+	            </div>
+				<div class="main-login main-center">
+
+					<form class="form-horizontal" method="POST" action="/register" autocomplete="new-password"
+					style="margin:auto;width:450px;">
+						<div class="form-group">
+							<label class="" for="">Name</label>
+
+							<input autocomplete="new-password" style="color:white;"class="" required placeholder="Enter Your Name" id="first_name"
+								name="name" type="text" class="validate">
+
+
+						</div>
+
+						<div class="form-group">
+							<label class="" for="blood">Blood Group</label>
+							<select name="blood" id="blood" class="validate" required>
+								<option value="">Select Blood Group</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="O">O</option>
+								<option value="AB">AB</option>
+							</select>
+
+
+						</div>
+						<div class="form-group">
+
+							<label class="t" for="rh"style="text-align:center;">Rh Factor</label>
+
+								<label>
+									<input class="" value="+" name="rh" type="radio" required />
+
+									<span class=""><div class="" style="font-size:15px;">
+										Positive
+									</div></span>
+								</label>
+
+
+								<label>
+									<input class="with-gap white" value="-" name="rh" type="radio" required />
+									<span class=""><div class=""style="font-size:15px;">
+										Negative
+									</div></span>
+								</label>
+
+
+						</div>
+
+						<div class="form-group">
+
+							<label class=""style=""> </label>
+							<input autocomplete="new-password" class="" required placeholder="Contact Number" id="phone"
+								name="phone" type="text" pattern="[789][0-9]{9}" class="validate" style="color:white;">
+
+						</div>
+
+						<div class="form-group">
+
+							<label class="" for="city">City</label>
+							<select name="city" id="city" class="validate" required >
+								<option value="">Select</option>
+							</select>
+
+						</div>
+
+
+						<div class="form-group">
+
+							<textarea autocomplete="new-password" style="color:white;" maxlength="80" id="address" placeholder="Enter your Address"
+								name="address" class="materialize-textarea  validate" required ></textarea>
+							<label for="address" class=""></label>
+
+
+						</div>
+
+						<div class="form-group ">
+
+							<button class="btn btn-primary btn-lg btn-block login-button"
+							type="submit"style="margin-bottom:35px;margin-left:100px;width:282px;">Register
+								<i class="material-icons right">send</i>
+							</button>
+
+
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron text-white" style="margin-bottom:0px;padding-bottom:0px;background-color:#30475e;">
+			<h4 style="text-align:center;" class="white-text">Copyright @2020</h4>
+		<h2 style="text-align:center;" class="white-text">DBMS Web Development Project</h2><br>
+
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	</body>
+
+</html>

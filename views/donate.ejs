@@ -1,0 +1,91 @@
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="Description"
+			content="Author: Aditya">
+		<title>BloodBank</title>
+
+
+		<link rel="stylesheet" href="materialize.min.css" />
+
+
+		<link href="icon.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="donate.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body style="background-color:;">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light md">
+			<a class="navbar-brand" href="#">Blood Donation</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item ">
+						<a class="nav-link" href="/bank"styl="color:white;">Check Donors <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/logout">Log Out</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<div class="center flow-text"style="padding-top:60px;">
+			<h2 class="indigo-text">Welcome <%= user.name %> </h2>
+
+			<p>You have donated <span class="pink-text"><%= user.amount %></span> Pint blood so far.</p>
+		</div>
+
+<div class="center flow-text">
+	<form action="/donate" method="post" id="amountForm">
+		<div class="">
+
+		</div>
+		<input required id="amount" name="amount" type="number" max="5" value="0" class="browser-default">
+		<span class="" style="font-size:6rem;">Pint</span><br>
+
+		<a onclick="document.getElementById('amountForm').submit();"
+			class="btn-floating btn-large waves-effect waves-light red"style=""><i class="material-icons"><h1>+</h1></i></a>
+	</form>
+</div>
+
+
+
+<div class="center flow-text" style="">
+	<%if(user.lastDonated>0){%>
+		<h3 style="">Congratulations !! </h3>
+		<h4>You have donated on <%= user.lastDonated %></h4>
+<%	} else{ %>
+		<h3 style="text-align:center;">Let us start by donating some blood</h3>
+	<%}%>
+</div>
+
+
+
+
+<div class="jumbotron text-white" style="margin-bottom:0px;padding-bottom:0px;background-color:#30475e;height:310px;">
+	<h6 style="text-align:center;">Copyright 2020</h6><br><br>
+<h4 style="text-align:center;">DBMS Web Development Project</h4>
+
+
+</div>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+		<script src="jquery.min.js"></script>
+		<script src="materialize.min.js"></script>
+		<script src="donate.js"></script>
+	</body>
+</html>
